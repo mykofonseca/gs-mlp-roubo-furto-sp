@@ -1,0 +1,9 @@
+{
+  "linhas_brutas": 383635,
+  "linhas_capital_roubo_furto": 183658,
+  "boletins_ambiguos_removidos": 44,
+  "boletins_unicos": 161477,
+  "boletins_validos": 157327,
+  "amostra": 20000,
+  "proporcao_roubo_amostra": 0.3672
+}
