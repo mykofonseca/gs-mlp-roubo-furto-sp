@@ -1,0 +1,14 @@
+flowchart TB
+    subgraph S1["1. Base de dados"]
+        direction LR
+        A["SSP-SP<br/>CelularesSubtraidos_2025.xlsx<br/>383.635 linhas"] --> B["Recorte da capital<br/>roubo art. 157 / furto art. 155<br/>183.658 linhas"] --> C["1 linha por BO<br/>última versão, sem ambíguos<br/>161.477 boletins"]
+    end
+    subgraph S2["2. Preparação"]
+        direction LR
+        D["Atributos e limpeza<br/>157.327 boletins válidos"] --> E["Amostra aleatória<br/>20.000 boletins"] --> F["Treino 70% / Val. 15% / Teste 15%<br/>one-hot + z-score ajustados no treino"]
+    end
+    subgraph S3["3. Modelo e aplicação"]
+        direction LR
+        G["6 MLPs em PyTorch<br/>escolha por F1 na validação"] --> H["Modelo M4 exportado<br/>pesos_mlp.npz + preprocessador.json"] --> I["Aplicação Streamlit<br/>inferência em NumPy"]
+    end
+    S1 --> S2 --> S3

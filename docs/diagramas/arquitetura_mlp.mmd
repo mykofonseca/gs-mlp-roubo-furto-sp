@@ -1,0 +1,6 @@
+flowchart LR
+    E["<b>Entrada: 166 neurônios</b><br/>delegacia: 92 one-hot<br/>período: 4 | dia da semana: 7<br/>tipo de local: 16 | subtipo: 40<br/>marca: 6<br/>qtd_celulares: 1 (z-score)"]
+    E --> H1["<b>Oculta 1</b><br/>Densa 64<br/>ReLU<br/>Dropout 0,3"]
+    H1 --> H2["<b>Oculta 2</b><br/>Densa 32<br/>ReLU<br/>Dropout 0,3"]
+    H2 --> S["<b>Saída</b><br/>Densa 1<br/>sigmoide"]
+    S --> P["P(roubo)<br/>P(furto) = 1 − P(roubo)<br/>roubo se P ≥ 0,5"]
