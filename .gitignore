@@ -1,0 +1,9 @@
+data/raw/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+relatorio/~$*
+GS-Desafio_MLP_SP_CNN1*.pdf
