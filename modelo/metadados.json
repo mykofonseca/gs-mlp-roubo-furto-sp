@@ -1,0 +1,252 @@
+{
+  "modelo": "M4",
+  "arquitetura": {
+    "entradas": 166,
+    "camadas_ocultas": [
+      64,
+      32
+    ],
+    "ativacao": "relu",
+    "dropout": 0.3,
+    "saida": "1 neurônio sigmoide"
+  },
+  "treino": {
+    "otimizador": "Adam",
+    "lr": 0.0005,
+    "weight_decay": 0.001,
+    "batch_size": 256,
+    "epocas_max": 80,
+    "paciencia": 15,
+    "melhor_epoca": 40,
+    "pos_weight": 1.7232
+  },
+  "limiar": 0.5,
+  "metricas_validacao": {
+    "acuracia": 0.7023,
+    "precision": 0.577,
+    "recall": 0.7105,
+    "f1": 0.6368
+  },
+  "metricas_teste": {
+    "acuracia": 0.6967,
+    "precision": 0.5728,
+    "recall": 0.6851,
+    "f1": 0.624
+  },
+  "matriz_teste": [
+    [
+      1335,
+      563
+    ],
+    [
+      347,
+      755
+    ]
+  ],
+  "opcoes": {
+    "delegacia": [
+      "01º D.P. SE",
+      "02º D.P. BOM RETIRO",
+      "03º D.P. CAMPOS ELISEOS",
+      "04º D.P. CONSOLAÇÃO",
+      "05º D.P. ACLIMACAO",
+      "06º D.P. CAMBUCI",
+      "07º D.P. LAPA",
+      "08º D.P. BRAS",
+      "09º D.P. - CARANDIRU",
+      "100º D.P. JDIM HERCULANO",
+      "101º D.P. JDIM IMBUIAS",
+      "102º D.P. SOCORRO",
+      "103º D.P. COHABII/ITAQU.",
+      "10º D.P. PENHA DE FRANCA",
+      "11º D.P. SANTO AMARO",
+      "12º D.P. PARI",
+      "13º D.P. CASA VERDE",
+      "14º D.P. PINHEIROS",
+      "15º D.P. DR. LUC. H BEIGUELMAN",
+      "16º D.P. VILA CLEMENTINO",
+      "17º D.P. DOUTOR ALDO GALIANO",
+      "18º D.P. ALTO DA MOOCA",
+      "19º D.P. VILA MARIA",
+      "20º D.P. AGUA FRIA",
+      "21º D.P. VILA MATILDE",
+      "22º D.P. SAO MIGUEL PTA",
+      "23º D.P. PERDIZES",
+      "24º D.P. PONTE RASA",
+      "25º D.P. PARELHEIROS",
+      "26º D.P. SACOMA",
+      "28º D.P. FREGUESIA DO O",
+      "29º D.P. VILA PRUDENTE",
+      "30º D.P. TATUAPE",
+      "31º D.P. VILA CARRAO",
+      "32º D.P. ITAQUERA",
+      "33º D.P. PIRITUBA",
+      "34º D.P. MORUMBI",
+      "35º D.P. JABAQUARA",
+      "36º D.P. VILA MARIANA",
+      "37º D.P. CAMPO LIMPO",
+      "38º D.P. VILA AMALIA",
+      "39º D.P. VILA GUSTAVO",
+      "40º D.P. VILA STA MARIA",
+      "41º D.P. VILA RICA",
+      "42º D.P. PARQUE S. LUCAS",
+      "43º D.P. CIDADE ADEMAR",
+      "44º D.P. GUAIANAZES",
+      "45º D.P. V BRASILANDIA",
+      "46º D.P. PERUS",
+      "47º D.P. CAPAO REDONDO",
+      "48º D.P. CIDADE DUTRA",
+      "49º D.P. SAO MATEUS",
+      "50º D.P. ITAIM PAULISTA",
+      "51º D.P. RIO PEQUENO",
+      "52º D.P. PARQUE S.JORGE",
+      "53º D.P. PARQUE DO CARMO",
+      "54º D.P. CID. TIRADENTES",
+      "55º D.P. PARQUE S.RAFAEL",
+      "56º D.P. VILA ALPINA",
+      "57º D.P. PARQUE DA MOOCA",
+      "58º D.P. VILA FORMOSA",
+      "59º D.P. JARDIM DOS IPES",
+      "62º D.P. ERMELINO MATARAZZO",
+      "63º D.P. VILA JACUI",
+      "64º D.P. CID.AE CARVALHO",
+      "65º D.P. ARTUR ALVIM",
+      "66º D.P. JDIM ARICANDUVA",
+      "67º D.P. JARDIM ROBRU",
+      "68º D.P. LAGEADO",
+      "69º D.P. TEOTONIO VILELA",
+      "70º D.P. VILA EMA",
+      "72º D.P. VILA PENTEADO",
+      "73º D.P. JACANA",
+      "74º D.P. PARADA TAIPAS",
+      "75º D.P. JARDIM ARPOADOR",
+      "77º D.P. SANTA CECILIA",
+      "78º D.P. JARDINS",
+      "80º D.P. VILA JOANIZA",
+      "81º D.P. BELEM",
+      "83º D.P. PARQUE BRISTOL",
+      "85º D.P. JARDIM MIRNA",
+      "87º D.P. V. P. BARRETO",
+      "89º D.P. JARDIM TABOAO",
+      "90º D.P. PQ. NOVO MUNDO",
+      "91º D.P. CEASA",
+      "92º D.P. PQ. SANTO ANTONIO",
+      "93º D.P. JAGUARÉ",
+      "95º D.P. HELIÓPOLIS",
+      "96º D.P. MONÇÕES",
+      "97º D.P. AMERICANOPOLIS",
+      "98º D.P. JARDIM MIRIAM",
+      "99º D.P. CAMPO GRANDE"
+    ],
+    "periodo": [
+      "madrugada",
+      "manha",
+      "tarde",
+      "noite"
+    ],
+    "dia_semana": [
+      "segunda",
+      "terca",
+      "quarta",
+      "quinta",
+      "sexta",
+      "sabado",
+      "domingo"
+    ],
+    "marca": [
+      "Apple",
+      "LG",
+      "Motorola",
+      "Outros",
+      "Samsung",
+      "Xiaomi"
+    ],
+    "subtipos_por_tipo": {
+      "Area não Ocupada": [
+        "Outros (Area não Ocupada)"
+      ],
+      "Centro Comercial/Empresarial": [
+        "Outros (Centro Comercial/Empresarial)",
+        "Área Comum"
+      ],
+      "Comércio e Serviços": [
+        "Mercado",
+        "Outros (Comércio e Serviços)"
+      ],
+      "Condomínio Comercial": [
+        "Lojas",
+        "Outros (Condomínio Comercial)"
+      ],
+      "Condomínio Residencial": [
+        "Casas",
+        "Outros (Condomínio Residencial)"
+      ],
+      "Estacionamento/Garagem": [
+        "Estacionamento com vigilância",
+        "Estacionamento particular",
+        "Estacionamento público",
+        "Garagem coletiva de prédio",
+        "Garagem ou abrigo de residência"
+      ],
+      "Hospedagem": [
+        "Outros (Hospedagem)"
+      ],
+      "Lazer e Recreação": [
+        "Casa de Show/Espetáculo",
+        "Outros (Lazer e Recreação)",
+        "Parque/Bosque/Horto/Reserva"
+      ],
+      "Outros": [
+        "Outros",
+        "Outros (Outros)"
+      ],
+      "Residência": [
+        "Casa",
+        "Outros (Residência)",
+        "Área Comum"
+      ],
+      "Restaurante e Afins": [
+        "Bar/Botequim",
+        "Outros",
+        "Outros (Restaurante e Afins)"
+      ],
+      "Rodovia/Estrada": [
+        "Interior de Transporte Coletivo",
+        "Interior de Veículo Particular",
+        "Outros (Rodovia/Estrada)",
+        "Transeunte"
+      ],
+      "Saúde": [
+        "Hospital",
+        "Outros (Saúde)"
+      ],
+      "Shopping Center": [
+        "Lojas",
+        "Outros (Shopping Center)",
+        "Área Comum"
+      ],
+      "Terminal/Estação": [
+        "Ferroviário",
+        "Metroviário e Ferroviário Metropolitano",
+        "Outros (Terminal/Estação)",
+        "Rodoviário",
+        "Ônibus/Lotação/Trolebus"
+      ],
+      "Via Pública": [
+        "Interior de Transporte Coletivo",
+        "Interior de Veículo Particular",
+        "Outros (Via Pública)",
+        "Praça",
+        "Transeunte",
+        "Veículo em movimento",
+        "Via Pública"
+      ]
+    }
+  },
+  "fonte": {
+    "orgao": "SSP-SP",
+    "base": "Celulares subtraídos 2025",
+    "url": "https://www.ssp.sp.gov.br/estatistica/consultas",
+    "registros_amostra": 20000
+  }
+}
