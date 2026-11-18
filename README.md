@@ -25,7 +25,7 @@ usado por uma aplicação web em Streamlit.
 | Notebook documentado | [`notebooks/mlp_roubo_furto_sp.ipynb`](notebooks/mlp_roubo_furto_sp.ipynb) |
 | Relatório técnico (10 slides) | [`relatorio/relatorio_tecnico_mlp_roubo_furto.pdf`](relatorio/relatorio_tecnico_mlp_roubo_furto.pdf) e `.pptx` |
 | Modelo treinado | `modelo/` |
-| Aplicação web | `app/app.py` (publicação: ver seção [Aplicação web](#aplicação-web)) |
+| Aplicação web | <https://gs-mlp-roubo-furto-sp.streamlit.app/> (código em `app/app.py`) |
 
 ## Tecnologias
 
@@ -136,6 +136,8 @@ O **M4** foi escolhido pelo F1 na validação. No conjunto de teste (3.000 BOs, 
 
 ## Aplicação web
 
+**Acesse em: <https://gs-mlp-roubo-furto-sp.streamlit.app/>**
+
 O formulário recebe os mesmos sete atributos usados no treino e mostra a classe estimada, as probabilidades de
 roubo e de furto e a forma correta de interpretar o resultado.
 
@@ -143,8 +145,8 @@ roubo e de furto e a forma correta de interpretar o resultado.
 |---|---|
 | ![Resultado roubo](docs/img/app_resultado_roubo.png) | ![Resultado furto](docs/img/app_resultado_furto.png) |
 
-**Publicação no Streamlit Community Cloud:** em <https://share.streamlit.io>, crie um app apontando para este
-repositório, branch `main`, arquivo principal `app/app.py`. As dependências são lidas de `app/requirements.txt`.
+A aplicação está publicada no Streamlit Community Cloud a partir deste repositório (branch `main`, arquivo
+principal `app/app.py`), com as dependências de `app/requirements.txt`.
 
 ## Estrutura de pastas
 
