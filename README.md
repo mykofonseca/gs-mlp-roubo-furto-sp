@@ -70,8 +70,8 @@ vazaria o rótulo. O notebook traz a análise completa.
 ### 1. Clonar e criar o ambiente
 
 ```bash
-git clone <url-do-repositorio>
-cd <pasta-do-repositorio>
+git clone https://github.com/mykofonseca/gs-mlp-roubo-furto-sp.git
+cd gs-mlp-roubo-furto-sp
 python -m venv .venv
 # Windows
 .venv\Scripts\activate
